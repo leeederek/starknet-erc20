@@ -214,21 +214,21 @@ These points will be attributed manually if you do not manage to have your contr
 
 ### ERC20 basics
 
-#### Exercise 1
+~~#### Exercise 1~~
 
-- Call `ex1_assign_rank()` in the evaluator contract to receive a random ticker for your ERC20 token, as well as an initial token supply (1 pt). You can read your assigned ticker and supply in [`Evaluator.cairo`](https://goerli.voyager.online/contract/0x05bf05eece944b360ff0098eb9288e49bd0007e5a9ed80aefcb740e680e67ea4) by calling getters `read_ticker()` and `read_supply()`
+~~- Call `ex1_assign_rank()` in the evaluator contract to receive a random ticker for your ERC20 token, as well as an initial token supply (1 pt). You can read your assigned ticker and supply in [`Evaluator.cairo`](https://goerli.voyager.online/contract/0x05bf05eece944b360ff0098eb9288e49bd0007e5a9ed80aefcb740e680e67ea4) by calling getters `read_ticker()` and `read_supply()`~~
 
-- Create an ERC20 token contract with the proper ticker and supply. You can use [this implementation](https://github.com/OpenZeppelin/cairo-contracts/blob/main/src/openzeppelin/token/erc20/ERC20.cairo) as a base (2 pts)
-- Deploy it to the Goerli-alpha testnet (1 pts)
-- Call `submit_erc20_solution()` in the Evaluator to configure the contract you want evaluated (2pts) (Previous 3 points for the ERC20 and the deployment are also attributed at that step)
+~~- Create an ERC20 token contract with the proper ticker and supply. You can use [this implementation](https://github.com/OpenZeppelin/cairo-contracts/blob/main/src/openzeppelin/token/erc20/ERC20.cairo) as a base (2 pts)~~
+~~- Deploy it to the Goerli-alpha testnet (1 pts)~~
+~~- Call `submit_erc20_solution()` in the Evaluator to configure the contract you want evaluated (2pts) (Previous 3 points for the ERC20 and the deployment are also attributed at that step)~~
 
-#### Exercise 2
+~~#### Exercise 2~~
 
-- Call `ex2_test_erc20()` in the evaluator to check ticker and supply and receive your points (2 pts)
+~~- Call `ex2_test_erc20()` in the evaluator to check ticker and supply and receive your points (2 pts)~~
 
-The total amount of points to collect from completing all exercises up to this point is : 8 points
+~~The total amount of points to collect from completing all exercises up to this point is : 8 points~~
 
-### Distributing tokens
+~~### Distributing tokens~~
 
 #### Exercise 3
 
