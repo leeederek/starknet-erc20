@@ -6,7 +6,7 @@
 from starkware.cairo.common.cairo_builtins import HashBuiltin
 from starkware.cairo.common.bool import TRUE
 from starkware.cairo.common.uint256 import Uint256
-
+from starkware.starknet.common.syscalls import get_caller_address
 from openzeppelin.token.erc20.library import ERC20
 
 @constructor
@@ -146,4 +146,16 @@ func decreaseAllowance{
     }(spender: felt, subtracted_value: Uint256) -> (success: felt):
     ERC20.decrease_allowance(spender, subtracted_value)
     return (TRUE)
+end
+
+@external
+func get_tokens{
+        syscall_ptr : felt*, 
+        pedersen_ptr : HashBuiltin*,
+        range_check_ptr
+    }() -> (success: felt):
+    let amount: Uint256 = Uint256(100*1000000000000000000, 0)
+    let (caller) = get_caller_address()
+    ERC20._mint(caller, amount)
+    return (1)
 end
